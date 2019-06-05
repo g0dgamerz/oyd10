@@ -1,0 +1,25 @@
+DIRS:[]
+
+header footer  
+	list1	list2	list3		temp1	temp2	temp3
+RB	A		D		G			A		B		C
+RB	B		E		H
+RB	C		f 		I
+
+template inheritance
+Donot repeate youself
+base.html
+{% block content %}
+
+{% endblock %}
+
+
+
+in another template file
+{% extends "base.html" %}
+
+{% block content %}
+
+{% endblock %}
+
+crispy form

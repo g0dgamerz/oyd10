@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block body %}
+<main role="main">
+   <form action="{% url 'final' %}">
+      <!-- {% csrf_token %} -->
+      <div class="album py-5 bg-light">
+         <div class="container">
+            <iv class="row">
+            <div class="col-md-4">
+               <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                     <div class="d-flex justify-content-between align-items-center">
+                        <!-- Group of default radios - option 1 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="a" name="l1" value="a">
+                           <label class="custom-control-label" for="a">A</label>
+                        </div>
+                        <!-- Group of default radios - option 2 -->
+                        <div class="custom-control custom-radio" >
+                           <input type="radio" class="custom-control-input" id="b" name="l1" checked value="b">
+                           <label class="custom-control-label" for="b">B</label>
+                        </div>
+                        <!-- Group of default radios - option 3 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="c" name="l1" value="c">
+                           <label class="custom-control-label" for="c">C</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                     <div class="d-flex justify-content-between align-items-center1">
+                        <!-- Group of default radios - option 1 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="d" name="l2" value="d">
+                           <label class="custom-control-label" for="d">D</label>
+                        </div>
+                        <!-- Group of default radios - option 2 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="e" name="l2" checked value="e">
+                           <label class="custom-control-label" for="e">E</label>
+                        </div>
+                        <!-- Group of default radios - option 3 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="f" name="l2" value="f">
+                           <label class="custom-control-label" for="f">F</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="card mb-4 shadow-sm">
+                  <div class="card-body">
+                     <div class="d-flex justify-content-between align-items-center">
+                        <!-- Group of default radios - option 1 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="g" name="l3" value="g">
+                           <label class="custom-control-label" for="g">G</label>
+                        </div>
+                        <!-- Group of default radios - option 2 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="h" name="l3" checked value="h">
+                           <label class="custom-control-label" for="h">H</label>
+                        </div>
+                        <!-- Group of default radios - option 3 -->
+                        <div class="custom-control custom-radio">
+                           <input type="radio" class="custom-control-input" id="i" name="l3" value="i">
+                           <label class="custom-control-label" for="i">I</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="send">
+         </div>
+      </div>
+   </form>
+</main>
+{% endblock %}
